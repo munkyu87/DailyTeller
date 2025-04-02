@@ -4,7 +4,7 @@ import {
   fetchNewsDetail,
   fetchSampleNewsList,
   fetchSampleNewsDetail,
-} from '../api/newsApi';
+} from '@api/newsApi';
 import {News} from '../types/newsTypes';
 
 export class NewsStore {

@@ -2,10 +2,11 @@ import React, {useEffect} from 'react';
 import {View, Text, ActivityIndicator, TouchableOpacity} from 'react-native';
 import {observer} from 'mobx-react';
 import {RouteProp, useNavigation, useRoute} from '@react-navigation/native';
-import {RootStackParamList} from '../navigation/RootNavigator';
-import {useNewsStore} from '../stores/useNewsStore';
-import styles from '../styles/NewsDetailScreen.styles';
+
 import {StackNavigationProp} from '@react-navigation/stack';
+import { RootStackParamList } from '@navigation/RootNavigator';
+import { useNewsStore } from '@stores/useNewsStore';
+import styles from '@styles/NewsDetailScreen.styles';
 
 type NewsDetailRouteProp = RouteProp<RootStackParamList, 'NewsDetail'>;
 type NavigationProp = StackNavigationProp<RootStackParamList, 'NewsDetail'>;
