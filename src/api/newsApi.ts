@@ -1,4 +1,4 @@
-import {News} from '../types/newsTypes';
+import { News } from "@type/newsTypes";
 
 export const fetchNewsList = async () => {
   const response = await fetch('https://api.example.com/news');

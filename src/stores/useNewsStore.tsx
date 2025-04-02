@@ -1,5 +1,5 @@
 import React, {createContext, useContext} from 'react';
-import {NewsStore} from './NewsStore'; // NewsStore import 확인
+import { NewsStore } from './NewsStore';
 
 // NewsStore 인스턴스 생성
 const newsStore = new NewsStore();
