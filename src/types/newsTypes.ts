@@ -4,8 +4,7 @@ export interface News {
   category?: NewsCategory; // 뉴스 카테고리
   content?: string; // 뉴스 본문
   publishedAt?: string; // 게시 날짜
-  source?: string; // 뉴스 출처
-  // 등등등
+  link?: string; // 뉴스 출처
 }
 
 // 뉴스 카테고리 타입
