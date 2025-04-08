@@ -1,6 +1,7 @@
 {
   "extends": "@react-native/typescript-config/tsconfig.json",
   "compilerOptions": {
+    "strict": true,
     "baseUrl": "./src",
     "paths": {
       "@api/*": ["api/*"],
@@ -10,6 +11,9 @@
       "@stores/*": ["stores/*"],
       "@styles/*": ["styles/*"],
       "@type/*": ["types/*"]
+      "@env": ["src/types/env.d.ts"]
     }
   },
+  "include": ["src"]
 }
+

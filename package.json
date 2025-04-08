@@ -3,10 +3,13 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "android": "react-native run-android",
-    "ios": "react-native run-ios",
+    "start": "ENV_FILE=.env.local react-native start",
+    "start:prod": "ENV_FILE=.env.production react-native start",
+    "android": "ENV_FILE=.env.local npx react-native run-android",
+    "android:prod": "ENV_FILE=.env.production npx react-native run-android",
+    "ios": "ENV_FILE=.env.local npx react-native run-ios",
+    "ios:prod": "ENV_FILE=.env.production npx react-native run-ios",
     "lint": "eslint .",
-    "start": "react-native start",
     "test": "jest"
   },
   "dependencies": {
@@ -33,6 +36,7 @@
     "@react-native/eslint-config": "0.78.1",
     "@react-native/metro-config": "0.78.1",
     "@react-native/typescript-config": "0.78.1",
+    "@types/axios": "^0.9.36",
     "@types/jest": "^29.5.13",
     "@types/react": "^19.0.0",
     "@types/react-test-renderer": "^19.0.0",
