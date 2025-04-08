@@ -1,7 +1,7 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
-import {HomeScreen} from '../screens/HomeScreen';
-import {NewsDetailScreen} from '../screens/NewsDetailScrenn';
+import {HomeScreen} from '@screens/HomeScreen';
+import {NewsDetailScreen} from '@screens/NewsDetailScrenn';
 import {Text, View} from 'react-native';
 
 export type RootStackParamList = {
