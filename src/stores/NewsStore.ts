@@ -6,6 +6,7 @@ import {
   fetchSampleNewsDetail,
   getNaverNews,
 } from '../api/newsApi';
+=======
 import {News} from '../types/newsTypes';
 import {
   NaverNewsResponse,

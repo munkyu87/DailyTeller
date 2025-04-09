@@ -1,6 +1,7 @@
+import styles from '@styles/WeatherWidget.styles';
 import React from 'react';
 import {View, Text, Image} from 'react-native';
-import styles from '../styles/WeatherWidget.styles';
+
 
 const WeatherWidget = () => {
   return (

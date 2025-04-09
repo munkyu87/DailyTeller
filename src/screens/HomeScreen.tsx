@@ -10,10 +10,10 @@ import {
 import {observer} from 'mobx-react';
 import {useNavigation} from '@react-navigation/native';
 import {StackNavigationProp} from '@react-navigation/stack';
-import {RootStackParamList} from '../navigation/RootNavigator';
-import {useNewsStore} from '../stores/useNewsStore';
-import WeatherWidget from '../components/WeatherWidget';
-import styles from '../styles/HomeScreen.styles';
+import { RootStackParamList } from '@navigation/RootNavigator';
+import { useNewsStore } from '@stores/useNewsStore';
+import styles from '@styles/HomeScreen.styles';
+import WeatherWidget from '@components/WeatherWidget';
 
 type HomeScreenNavigationProp = StackNavigationProp<RootStackParamList, 'Home'>;
 
