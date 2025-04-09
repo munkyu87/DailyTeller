@@ -10,7 +10,7 @@ const WeatherWidget = () => {
         source={{uri: 'https://example.com/weather-icon.png'}}
         style={styles.icon}
       />
-      <Text style={styles.temperature}>22°C</Text>
+      <Text style={styles.temperature}>32°C</Text>
     </View>
   );
 };

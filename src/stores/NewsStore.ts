@@ -4,8 +4,14 @@ import {
   fetchNewsDetail,
   fetchSampleNewsList,
   fetchSampleNewsDetail,
-} from '@api/newsApi';
+  getNaverNews,
+} from '../api/newsApi';
+=======
 import {News} from '../types/newsTypes';
+import {
+  NaverNewsResponse,
+  SampleNaverNewsResponse,
+} from '../types/naverNewsTypes';
 
 export class NewsStore {
   newsList: News[] = [];
@@ -19,7 +25,18 @@ export class NewsStore {
   async loadNewsList() {
     this.loading = true;
     try {
-      this.newsList = await fetchSampleNewsList();
+      const naverNews = SampleNaverNewsResponse;
+      /**
+       * @todo api 연동 시 Change
+       * const naverNews = await getNaverNews();
+       */
+      this.newsList = naverNews.items.map((item, index) => ({
+        id: `${index}`,
+        title: item.title,
+        content: item.description,
+        publishedAt: item.pubDate,
+        link: item.link,
+      }));
     } finally {
       this.loading = false;
     }

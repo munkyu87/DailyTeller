@@ -1,4 +1,20 @@
-import { News } from "@type/newsTypes";
+import {NaverNewsResponse, NewsSearchParams} from 'src/types/naverNewsTypes';
+import {News} from '../types/newsTypes';
+import {ApiResponse, api} from './api';
+
+export const getNaverNews = async (
+  params?: NewsSearchParams,
+): Promise<ApiResponse<NaverNewsResponse>> => {
+  try {
+    const response = await api.get<ApiResponse<NaverNewsResponse>>(
+      '/news/naver',
+      {params},
+    );
+    return response.data;
+  } catch (error: any) {
+    throw error.response?.data ?? new Error('네이버 뉴스 불러오기 실패');
+  }
+};
 
 export const fetchNewsList = async () => {
   const response = await fetch('https://api.example.com/news');
