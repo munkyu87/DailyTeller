@@ -1,6 +1,6 @@
-import {NaverNewsResponse, NewsSearchParams} from '../types/naverNewsTypes';
-import {News} from '../types/newsTypes';
-import {ApiResponse, api} from './api';
+import {NaverNewsResponse, NewsSearchParams} from '@type/naverNewsTypes';
+import {News} from '@type/newsTypes';
+import {ApiResponse, api} from '@api/api';
 
 export const getNaverNews = async (
   params?: NewsSearchParams,
