@@ -10,21 +10,20 @@ import {
 import {observer} from 'mobx-react';
 import {useNavigation} from '@react-navigation/native';
 import {StackNavigationProp} from '@react-navigation/stack';
-import { RootStackParamList } from '@navigation/RootNavigator';
-import { useNewsStore } from '@stores/useNewsStore';
-import styles from '@styles/HomeScreen.styles';
-import WeatherWidget from '@components/WeatherWidget';
+import {RootStackParamList} from '../navigation/RootNavigator';
+import {useNewsStore} from '../stores/useNewsStore';
+import WeatherWidget from '../components/WeatherWidget';
+import styles from '../styles/HomeScreen.styles';
 
-type HomeScreenNavigationProp = StackNavigationProp<RootStackParamList, 'Home'>;
+// type HomeScreenNavigationProp = StackNavigationProp<RootStackParamList, 'Home'>;
 
 export const HomeScreen = observer(() => {
-  const navigation = useNavigation<HomeScreenNavigationProp>();
+  // const navigation = useNavigation<HomeScreenNavigationProp>();
   const newsStore = useNewsStore();
 
   useEffect(() => {
     console.log('homeScreen진입');
     newsStore.loadNewsList();
-    console.log(JSON.stringify(newsStore.newsList, null, 2));
   }, []);
 
   const openLink = (url: string) => {
