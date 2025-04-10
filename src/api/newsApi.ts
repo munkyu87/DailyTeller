@@ -1,4 +1,4 @@
-import {NaverNewsResponse, NewsSearchParams} from 'src/types/naverNewsTypes';
+import {NaverNewsResponse, NewsSearchParams} from '../types/naverNewsTypes';
 import {News} from '../types/newsTypes';
 import {ApiResponse, api} from './api';
 
