@@ -5,7 +5,7 @@
     "baseUrl": "./src",
     "paths": {
       "@api/*": ["api/*"],
-      "@assets/*": ["assets/*"],
+      "@colors/*": ["assets/colors/*"],
       "@components/*": ["components/*"],
       "@config/*": ["config/*"],
       "@navigation/*": ["navigation/*"],
