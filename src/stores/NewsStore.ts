@@ -1,7 +1,7 @@
 import {makeAutoObservable} from 'mobx';
-import {fetchSampleNewsDetail} from '../api/newsApi';
-import {News} from '../types/newsTypes';
-import {SampleNaverNewsResponse} from '../types/naverNewsTypes';
+import {fetchSampleNewsDetail} from '@api/newsApi';
+import {News} from '@type/newsTypes';
+import {SampleNaverNewsResponse} from '@type/naverNewsTypes';
 
 export class NewsStore {
   newsList: News[] = [];

@@ -10,8 +10,6 @@ module.exports = {
         allowUndefined: true,
       },
     ],
-  ],
-  plugins: [
     [
       'module-resolver',
       {
@@ -30,12 +28,14 @@ module.exports = {
         alias: {
           '~': './src',
           '@api': './src/api',
+          '@colors': './src/assets/colors',
           '@components': './src/components',
+          '@config': './src/config/',
           '@navigation': './src/navigation',
           '@screens': './src/screens',
           '@stores': './src/stores',
           '@styles': './src/styles',
-          '@type' : './src/types'
+          '@type': './src/types'
         },
       },
     ],

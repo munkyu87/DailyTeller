@@ -5,12 +5,14 @@
     "baseUrl": "./src",
     "paths": {
       "@api/*": ["api/*"],
+      "@colors/*": ["assets/colors/*"],
       "@components/*": ["components/*"],
+      "@config/*": ["config/*"],
       "@navigation/*": ["navigation/*"],
       "@screens/*": ["screens/*"],
       "@stores/*": ["stores/*"],
       "@styles/*": ["styles/*"],
-      "@type/*": ["types/*"]
+      "@type/*": ["types/*"],
       "@env": ["src/types/env.d.ts"]
     }
   },
