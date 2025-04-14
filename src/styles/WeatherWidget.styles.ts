@@ -2,18 +2,24 @@ import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
+    alignItems: 'flex-end',
+    marginTop: 15,
+  },
+  weatherBox: {
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'flex-end',
-    padding: 10,
+    borderRadius: 12,
+    paddingHorizontal: 14,
+    paddingVertical: 6,
   },
-  icon: {
-    width: 30,
-    height: 30,
+  weatherText: {
+    fontSize: 16,
+    fontWeight: '600',
+    marginRight: 6,
   },
   temperature: {
-    fontSize: 16,
-    marginLeft: 5,
+    fontSize: 15,
+    fontWeight: '400',
   },
 });
 
