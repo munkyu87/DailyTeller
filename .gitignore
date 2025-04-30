@@ -76,5 +76,5 @@ yarn-error.log
 
 # Xcode Workspace
 *.xcworkspace/xcshareddata/*
-
+**/IDEWorkspaceChecks.plist
 # .env.local 로컬에 등록 후 깃 ignore에 추가할 예정
